@@ -6,8 +6,7 @@ class WallServiceTest {
 
     @Test
     fun add() {
-        val data = WallService()
-        data.add(Post(0, 2, 3, 4, "test", Post.Comments(), "4", Post.Likes(), true, true))
+        val data = WallService().add(Post()).id
         assertNotEquals(0, data)
     }
 
